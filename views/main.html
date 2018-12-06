@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChinaVis2017-1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+	<link href="../public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../public/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row clearfix">
+
+			<div class="contain">
+				<div class="map_container col-md-9 col-xs-9 col-sm-9 column"></div>
+				<div class="statics_container col-md-3 col-xs-3 col-sm-3 column">
+					<div class="row clearfix">
+						<div class="sankey_diagram"></div>
+						<div class="words_cloud">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line_chart"></div>
+
+		</div>
+	</div>
+
+	<div class="select-box">
+		<div class="select-arrow"></div>
+		<div class="select-contain">
+			<div class="select-contain-title"><p>Select Date</p></div>
+			<div class="select-close-btn close-btn" onclick="close_select_date()"><i class="fa fa-fw fa-close"></i></div>
+			<div class="select-picker-container">
+				<div class="form-group">
+	            	<select class="selectpicker show-tick show-menu-arrow " id="selectpicker" data-live-search="true" data-width="100%">
+					</select>
+				</div>
+			</div>
+			<div class="select-ok-btn btn btn-info" id="ok-btn" onclick="select_date()"><p>OK</p></div>
+			<div class="select-cancel-btn btn btn-info close-btn" onclick="close_select_date()"><p>Cancel</p></div>
+		</div>
+	</div>
+
+	<!-- <div class="modal fade select_dialog" id="select_date" tabindex="-1" aria-hidden="true" data-backdrop=”static”>
+	    <div class="modal-dialog select_contain">
+	        <div class="modal-content">
+
+	            <div class="modal-header">
+	                <button type="button" class="close close-btn" data-dismiss="modal" aria-hidden="true"><i class="fa fa-fw fa-close"></i></button>
+	                <div class="modal-title title"><p>Select Date</p></div>
+	            </div>
+
+	            <div class="modal-body">
+	            	<div class="form-group">
+		            	<select class="selectpicker show-tick show-menu-arrow " data-live-search="true" data-width="100%">
+						  <option>Mustard</option>
+						  <option>Ketchup</option>
+						  <option>Barbecue</option>
+						</select>
+					</div>
+	            </div>
+
+	        </div>
+	    </div>
+	</div> -->
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+<script type="text/javascript" src="../public/js/echart_wordcloud/echarts-wordcloud.min.js"></script>
+<script type="text/javascript" src="../public/js/main_page.js"></script>
+</html>

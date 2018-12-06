@@ -1,0 +1,38 @@
+[{
+	"featureType": "highway",
+    "elementType": "labels",
+    "stylers": {
+   		"visibility": "off"
+	}
+},{
+	"featureType": "railway",
+    "elementType": "labels",
+    "stylers": {
+   		"visibility": "off"
+	}
+},{
+	"featureType": "poilabel",
+    "elementType": "all",
+    "stylers": {
+   		"visibility": "off"
+	}
+},{
+	"featureType": "building",
+    "elementType": "all",
+    "stylers": {
+   		"visibility": "off"
+	}
+}, {
+	"featureType": "manmade",
+    "elementType": "all",
+    "stylers": {
+   		"visibility": "off"
+	}
+}, {
+	"featureType": "all",
+    "elementType": "all",
+    "stylers": {
+     	"lightness": 12,
+      	"saturation": -100
+	}
+}]
