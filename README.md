@@ -1,0 +1,3 @@
+# Data-Visualization
+基于echarts前端框架的ChinaVis2017挑战一实现
+主页html文件于views文件夹下main.html
